@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class SimpleCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Запрашиваем у пользователя ввод двух целых чисел
+        System.out.print("Введите первое целое число (a): ");
+        int a = scanner.nextInt();
+
+        System.out.print("Введите второе целое число (b): ");
+        int b = scanner.nextInt();
+
+        // Сравниваем два числа и выводим результат
+        if (a > b) {
+            System.out.println("a > b");
+        } else if (a < b) {
+            System.out.println("a < b");
+        } else {
+            System.out.println("a = b");
+        }
+
+        // Выполняем основные арифметические операции и выводим результаты
+        System.out.println("Результаты операций:");
+        System.out.println("Сложение (a + b): " + (a + b));
+        System.out.println("Вычитание (a - b): " + (a - b));
+        System.out.println("Умножение (a * b): " + (a * b));
+
+        // Закрываем сканер
+        scanner.close();
+    }
+}
