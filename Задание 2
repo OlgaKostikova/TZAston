@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class StringComparator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Запрашиваем у пользователя ввод двух строк
+        System.out.print("Введите первую строку (a): ");
+        String a = scanner.nextLine(); // Считываем первую строку
+
+        System.out.print("Введите вторую строку (b): ");
+        String b = scanner.nextLine(); // Считываем вторую строку
+
+        // Сравниваем строки и выводим результат
+        if (a.equals(b)) {
+            System.out.println("Строки идентичны");
+        } else {
+            System.out.println("Строки неидентичны");
+        }
+
+        // Закрываем сканер
+        scanner.close();
+    }
+}
